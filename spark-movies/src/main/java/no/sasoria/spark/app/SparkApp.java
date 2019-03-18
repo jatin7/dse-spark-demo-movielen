@@ -7,7 +7,7 @@ import org.apache.spark.sql.SparkSession;
 
 import no.sasoria.spark.cassandra.CassandraWriter;
 
-public class App {
+public class SparkApp {
 	public static void main(String[] args) {
 		SparkConf conf = new SparkConf()
 				.setAppName("insert-movies")
