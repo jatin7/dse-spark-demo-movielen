@@ -11,7 +11,7 @@ import com.google.common.collect.ImmutableMap;
  * An instance of this class runs datastax' cassandra-driver to create a keyspace
  * and table for movies. 
  */
-public class App {
+public class CassandraApp {
 	public static void main(String[] args) {
 		Cluster cluster = Cluster.builder()
 				.withClusterName("cassandraCluster")
