@@ -12,7 +12,7 @@ public class CassandraWriter {
 	/**
 	 * Writes a specified dataframe to Cassandra. The Keyspace and Table in Cassandra
 	 * must be defined before this method is executed, otherwise a @code java.io.IOException}
-	 * will be thrown.
+	 * will be thrown (See {@code CassandraApp} for further details).
 	 * 
 	 * @param spark SparkSession
 	 * @param tableDf Dataset<Row>
@@ -23,10 +23,10 @@ public class CassandraWriter {
 			return false;
 
 		tableDf.write()
-			.format("org.apache.spark.sql.cassandra")
-			.options(createMapConfig())
-			.save();
-
+		.format("org.apache.spark.sql.cassandra")
+		.options(createMapConfig())
+		.save();
+		
 		return true;
 	}
 	

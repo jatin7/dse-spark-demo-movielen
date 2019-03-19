@@ -14,7 +14,7 @@ import org.apache.spark.sql.types.StructType;
 
 /**
  * SparkReader provides static methods for reading data sources in spark. 
- * Could be expanded to other types, like parquet...
+ * Could be expanded to other types, like parquet.
  * 
  */
 public class SparkReader {
