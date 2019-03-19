@@ -7,7 +7,7 @@
 
 ## Cassandra
 
-Running CassandraApp results in the follwing Cassandra table.
+Running CassandraApp and SparkApp's `writeToCassandra()` results in the follwing Cassandra table.
 ```
 cqlsh> select * FROM movielens.movies 
    ... ;
