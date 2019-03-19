@@ -22,7 +22,7 @@ cqlsh> select * FROM movielens.movies
 ```
 
 ## Spark
-SparkSql is implemented in SparkApp. `selectMovie(SparkSession spark, int id)` returns a Dataframe with the following result.
+SparkSql is implemented in SparkApp. `selectMovie(spark, 1683)` returns a Dataframe with the following result.
 ```
 +----+--------------------+
 |  id|               title|
