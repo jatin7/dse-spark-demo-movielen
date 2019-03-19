@@ -24,9 +24,9 @@ cqlsh> select * FROM movielens.movies
 ## Spark
 SparkSql is implemented in SparkApp. `selectMovie(spark, 1683)` returns a Dataframe with the following result.
 ```
-+----+--------------------+
-|  id|               title|
-+----+--------------------+
-|1683|Wings of the Dove...|
-+----+--------------------+
++----+--------------------+-------------+
+|  id|               title|       genres|
++----+--------------------+-------------+
+|1683|Wings of the Dove...|Drama|Romance|
++----+--------------------+-------------+
 ```
