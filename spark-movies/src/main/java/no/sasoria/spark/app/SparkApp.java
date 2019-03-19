@@ -28,7 +28,7 @@ public class SparkApp {
 
 		writeToCassandra(spark, createTable(spark));
 		selectMovie(spark, 1683);
-		selectMovie(spark, "Inside");
+		selectMovie(spark, "Inside 1996");
 	}
 
 	/**
@@ -62,7 +62,7 @@ public class SparkApp {
 	}
 	
 	private static Dataset<Row> selectMovie(SparkSession spark, int id) {
-		Dataset<Row> df = spark.sql("SELECT id,title FROM movies WHERE id=" + id);
+		Dataset<Row> df = spark.sql("SELECT id,title,genres FROM movies WHERE id=" + id);
 		df.show();
 		
 		return df;
