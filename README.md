@@ -20,3 +20,13 @@ cqlsh> select * FROM movielens.movies
    7479 | Drama                          | Watch on the Rhine (1943)                                                     
    ...
 ```
+
+## Spark
+SparkSql is in SparkApp. `selectMovie(SparkSession spark, int id)` returnds a Dataframe with the following result.
+```
++----+--------------------+
+|  id|               title|
++----+--------------------+
+|1683|Wings of the Dove...|
++----+--------------------+
+```
